@@ -1,0 +1,6 @@
+dex_import {
+    name: "com.google.android.camera.experimental2020_midyear",
+    owner: "google",
+    jars: ["com.google.android.camera.experimental2020_midyear.jar"],
+    soc_specific: true,
+}
