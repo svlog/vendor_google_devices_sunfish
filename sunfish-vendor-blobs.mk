@@ -535,14 +535,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/dsp/cdsp/ubwcdma_dynlib.so:$(TARGET_COPY_OUT_VENDOR)/dsp/cdsp/ubwcdma_dynlib.so:google \
     vendor/google_devices/sunfish/vendor/etc/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration_7_0.xml:google \
     vendor/google_devices/sunfish/vendor/etc/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration_7_0.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Codec_cal.acdb:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Handset_cal.acdb:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb:google \
     vendor/google_devices/sunfish/vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb:google \
     vendor/google_devices/sunfish/vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Codec_cal.acdb:google \
     vendor/google_devices/sunfish/vendor/etc/acdbdata/IDP/IDP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_General_cal.acdb:google \
@@ -570,16 +562,8 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Headset_cal.acdb:google \
     vendor/google_devices/sunfish/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:google \
     vendor/google_devices/sunfish/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:google \
-    vendor/google_devices/sunfish/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb:google \
-    vendor/google_devices/sunfish/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf:google \
-    vendor/google_devices/sunfish/vendor/etc/audio_platform_info_bolero_snd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_bolero_snd.xml:google \
     vendor/google_devices/sunfish/vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml:google \
     vendor/google_devices/sunfish/vendor/etc/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/bluetooth_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_hearing_aid_audio_policy_configuration.xml:google \
     vendor/google_devices/sunfish/vendor/etc/bluetooth_power_limits.csv:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_power_limits.csv:google \
     vendor/google_devices/sunfish/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem:google \
     vendor/google_devices/sunfish/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti:google \
@@ -690,11 +674,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml:google \
     vendor/google_devices/sunfish/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml:google \
     vendor/google_devices/sunfish/vendor/etc/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/media_codecs_omx.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_omx.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/mixer_paths_bolero_snd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bolero_snd.xml:google \
     vendor/google_devices/sunfish/vendor/etc/modem_stat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/modem_stat.conf:google \
     vendor/google_devices/sunfish/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf:google \
     vendor/google_devices/sunfish/vendor/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml:google \
@@ -754,7 +733,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/etc/permissions/com.google.android.camera.experimental2020_midyear.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.google.android.camera.experimental2020_midyear.xml:google \
     vendor/google_devices/sunfish/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml:google \
     vendor/google_devices/sunfish/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json:google \
     vendor/google_devices/sunfish/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt:google \
     vendor/google_devices/sunfish/vendor/etc/qdcm_calib_data_sofef01_cmd_mode_dsi_sdc_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sofef01_cmd_mode_dsi_sdc_panel.xml:google \
     vendor/google_devices/sunfish/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml:google \
@@ -762,7 +740,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy:google \
     vendor/google_devices/sunfish/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy:google \
     vendor/google_devices/sunfish/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy:google \
-    vendor/google_devices/sunfish/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy:google \
     vendor/google_devices/sunfish/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy:google \
     vendor/google_devices/sunfish/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:google \
     vendor/google_devices/sunfish/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config:google \
@@ -818,8 +795,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt_to_wake.proto:google \
     vendor/google_devices/sunfish/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto:google \
     vendor/google_devices/sunfish/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config:google \
-    vendor/google_devices/sunfish/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml:google \
     vendor/google_devices/sunfish/vendor/etc/st54j_aram_cts.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54j_aram_cts.txt:google \
     vendor/google_devices/sunfish/vendor/etc/st54j_aram.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54j_aram.txt:google \
     vendor/google_devices/sunfish/vendor/etc/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml:google \
@@ -2170,9 +2145,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/SEA/TM/Commercial/mcfg_sw.mbn:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/SEA/TM/Commercial/mcfg_sw.mbn:google \
     vendor/google_devices/sunfish/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/mbn_sw.dig:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/mbn_sw.dig:google \
     vendor/google_devices/sunfish/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/mbn_sw.txt:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/mbn_sw.txt:google \
-    vendor/google_devices/sunfish/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg.version:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg.version:google \
-    vendor/google_devices/sunfish/vendor/usr/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc:google \
-    vendor/google_devices/sunfish/vendor/usr/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl:google
+    vendor/google_devices/sunfish/vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg.version:$(TARGET_COPY_OUT_VENDOR)/rfs/msm/mpss/readonly/vendor/mbn/mcfg.version:google
 
 PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/lib64/libvndfwk_detect_jni.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti.so:google \
