@@ -1,5 +1,7 @@
 # Auto-generated file, do not edit
 
+$(call inherit-product, vendor/google_devices/sunfish/sunfish-vendor-blobs.mk)
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno \
@@ -13,7 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.lito.api30 \
+    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30 \
     graphics.gpu.profiler.support=true \
     graphics.gpu.profiler.vulkan_layer_apk=com.google.pixel.sunfish.gpuprofiling.vulkanlayer
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -38,8 +40,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.feature.device_default_dark_mode=true \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
     ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
-
-$(call inherit-product, vendor/google_devices/sunfish/sunfish-vendor-blobs.mk)
 
 # Runtime Resource overlays
 PRODUCT_PACKAGES += \
@@ -220,18 +220,37 @@ PRODUCT_PACKAGES += \
 
 # Enforced modules from user configuration
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service@7.0-impl \
-    android.hardware.authsecret@1.0-service \
-    android.hardware.bluetooth@1.0-service \
-    android.hardware.bluetooth.audio@2.1-impl \
+    android.frameworks.stats@1.0.vendor \
+    android.hardware.authsecret@1.0.vendor \
+    android.hardware.biometrics.fingerprint@2.2.vendor \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.camera.provider@2.7-impl \
     android.hardware.camera.provider@2.7-service_64 \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.graphics.composer@2.4.vendor \
     android.hardware.identity-support-lib.vendor \
+    android.hardware.input.classifier@1.0.vendor \
+    android.hardware.input.common@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.neuralnetworks@1.3.vendor \
     android.hardware.oemlock@1.0-impl \
+    android.hardware.oemlock@1.0.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power-V1-ndk_platform.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.hardware.weaver@1.0.vendor \
+    android.system.net.netd@1.1.vendor \
     chre \
     ese_spi_st \
+    hardware.google.bluetooth.bt_channel_avoidance@1.0.vendor \
+    hardware.google.bluetooth.sar@1.0.vendor \
     hardware.google.light@1.0.vendor \
+    libavservices_minijail.vendor \
     libavservices_minijail_vendor \
     libcld80211 \
     libcodec2_hidl@1.0.vendor \
@@ -254,6 +273,7 @@ PRODUCT_PACKAGES += \
     libnos_transport:64 \
     libprotobuf-cpp-full-vendorcompat \
     libpuresoftkeymasterdevice.vendor \
+    lib_sensor_listener \
     libsensorndkbridge \
     libsoft_attestation_cert.vendor \
     libstagefright_bufferpool@2.0.1.vendor \

@@ -186,6 +186,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so:google \
     vendor/google_devices/sunfish/product/media/bootanimation-dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip:google \
     vendor/google_devices/sunfish/product/media/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip:google \
+    vendor/google_devices/sunfish/system_ext/bin/tcmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd:google \
     vendor/google_devices/sunfish/system_ext/etc/init/init.sota.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.sota.rc:google \
     vendor/google_devices/sunfish/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc:google \
     vendor/google_devices/sunfish/system_ext/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perf/wlc_model.tflite:google \
@@ -218,6 +219,22 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/etc/permissions/uimremoteclient.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/uimremoteclient.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/uimremoteserver.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vzw_mvs_permissions.xml:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/339/0/65536/mtp855.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/341/2/65536/svr845.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/341/2/65536/svr845.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/356/0/65536/mtp865.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/356/1/131072/morpheus.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/356/1/65536/trinity.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/415/0/131072/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/131072/mtplahaina_6dof_config.xml:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/415/0/131072/mtplahaina.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/131072/mtplahaina.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvr_hid_device_list.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/qvr/qvr_usb_device_list.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvr_usb_device_list.txt:google \
+    vendor/google_devices/sunfish/system_ext/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/qvr@2.0.policy:google \
     vendor/google_devices/sunfish/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml:google \
     vendor/google_devices/sunfish/system_ext/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@1.0.so:google \
@@ -253,6 +270,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/libjnihelpers.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libjnihelpers.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/liblayerext.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liblayerext.qti.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/liblistensoundmodel2.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liblistensoundmodel2.qti.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmdsprpc_system.so:google \
@@ -264,6 +282,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/lib64/libmmipstreamsourcehttp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmipstreamsourcehttp.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libmmipstreamutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmipstreamutils.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libmwqemiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmwqemiptablemgr.so:google \
@@ -275,6 +294,7 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/lib64/libQOC.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libQOC.qti.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libQSEEComAPI_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libQSEEComAPI_system.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqspmsvc.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdm-disp-apis.qti.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdsprpc_system.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsecureuisvc_jni.so:google \
@@ -301,10 +321,53 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@1.8.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.config@2.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.postproc@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.2.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.mwqem@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.slm@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.alarm@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cryptfshw@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.connection@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.connection@1.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.dynamicdds@1.1.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.iwlan@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.iwlan@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.iwlan@1.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.latency@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.qmi@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.dpmservice@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.dsp@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qseecom@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qteeconnector@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.am@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.seccam@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.slmadapter@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.tui_comm@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callcapability@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callinfo@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.1.so:google \
     vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.0.so:google \
@@ -325,17 +388,47 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdiag_system.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libdisplayconfig.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdisplayconfig.qti.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libdolphin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdolphin.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libframeextension.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libframeextension.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libimscamera_jni.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libimsmedia_jni.so:google \
     vendor/google_devices/sunfish/system_ext/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvideocodec.so:google \
     vendor/google_devices/sunfish/system_ext/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvtextutils.so:google \
     vendor/google_devices/sunfish/system_ext/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvt.so:google \
     vendor/google_devices/sunfish/system_ext/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvtutils.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libjnihelpers.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libjnihelpers.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/liblayerext.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/liblayerext.qti.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/liblistensoundmodel2.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/liblistensoundmodel2.qti.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libMapService.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libMapService.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmdsprpc_system.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libmediasp_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmediasp_jni.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libminksocket_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libminksocket_system.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libmink-sock-native-api.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmink-sock-native-api.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libmwqemiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmwqemiptablemgr.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libOpenCL_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libOpenCL_system.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libqape.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqape.qti.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libqct_resampler.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqct_resampler.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_cci_system.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_encdec_system.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libQSEEComAPI_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libQSEEComAPI_system.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqspmsvc.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsdm-disp-apis.qti.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsdsprpc_system.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsecureuisvc_jni.so:google \
     vendor/google_devices/sunfish/system_ext/lib/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsecureui_svcsock_system.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libsensor_calibration.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsensor_calibration.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libskewknob_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libskewknob_system.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libsmomoconfig.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsmomoconfig.qti.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libsmomo.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsmomo.qti.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libtracker_6dof_impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtracker_6dof_impl.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libtrigger-handler.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtrigger-handler.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libupdateprof.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libupdateprof.qti.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libvr_amb_engine.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvr_amb_engine.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libvraudio_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvraudio_client.qti.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libvraudio.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvraudio.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libvr_object_engine.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvr_object_engine.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/libvr_sam_wrapper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvr_sam_wrapper.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.1.so:google \
@@ -348,11 +441,52 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@1.8.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.config@2.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.postproc@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.2.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.mwqem@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.slm@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.diaghal@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.alarm@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.cryptfshw@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.connection@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.connection@1.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.dynamicdds@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.dynamicdds@1.1.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.iwlan@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.iwlan@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.iwlan@1.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.latency@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.qmi@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.dpmservice@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.dsp@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.mwqemadapter@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qseecom@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qteeconnector@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.am@1.0.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.seccam@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.secureprocessor.common@1.0-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.secureprocessor.common@1.0-helper.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.secureprocessor.common@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.secureprocessor.common@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.secureprocessor.config@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.secureprocessor.config@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.secureprocessor.device@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.secureprocessor.device@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.slmadapter@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.tui_comm@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.callcapability@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.callinfo@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@1.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@1.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@1.1.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@2.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@2.1.so:google \
     vendor/google_devices/sunfish/system_ext/lib/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.imsrtpservice@3.0.so:google \
-    vendor/google_devices/sunfish/vendor/apex/com.android.vibrator.sunfish.apex:$(TARGET_COPY_OUT_VENDOR)/apex/com.android.vibrator.sunfish.apex:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.latency@2.0.so:google \
+    vendor/google_devices/sunfish/system_ext/lib/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.qspmhal@1.0.so:google \
     vendor/google_devices/sunfish/vendor/app/CACertService/oat/arm64/CACertService.odex:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/oat/arm64/CACertService.odex:google \
     vendor/google_devices/sunfish/vendor/app/CACertService/oat/arm64/CACertService.vdex:$(TARGET_COPY_OUT_VENDOR)/app/CACertService/oat/arm64/CACertService.vdex:google \
     vendor/google_devices/sunfish/vendor/app/CneApp/oat/arm64/CneApp.odex:$(TARGET_COPY_OUT_VENDOR)/app/CneApp/oat/arm64/CneApp.odex:google \
@@ -687,7 +821,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/etc/permissions/android.hardware.context_hub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.context_hub.xml:google \
     vendor/google_devices/sunfish/vendor/etc/permissions/android.hardware.device_unique_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.device_unique_attestation.xml:google \
     vendor/google_devices/sunfish/vendor/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml:google \
-    vendor/google_devices/sunfish/vendor/etc/permissions/android.hardware.identity_credential.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.xml:google \
     vendor/google_devices/sunfish/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml:google \
     vendor/google_devices/sunfish/vendor/etc/permissions/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml:google \
     vendor/google_devices/sunfish/vendor/etc/permissions/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml:google \
@@ -743,7 +876,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy:google \
     vendor/google_devices/sunfish/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:google \
     vendor/google_devices/sunfish/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config:google \
-    vendor/google_devices/sunfish/vendor/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_VENDOR)/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256:google \
     vendor/google_devices/sunfish/vendor/etc/sensors/config/bmp380.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp380.json:google \
     vendor/google_devices/sunfish/vendor/etc/sensors/config/lis2mdl.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lis2mdl.json:google \
     vendor/google_devices/sunfish/vendor/etc/sensors/config/lsm6dsr_16g.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsr_16g.json:google \
@@ -984,46 +1116,12 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/firmware/widevine.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/widevine.mdt:google \
     vendor/google_devices/sunfish/vendor/firmware/wlanmdsp.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/wlanmdsp.mbn:google \
     vendor/google_devices/sunfish/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.frameworks.stats@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.stats@1.0.so:google \
     vendor/google_devices/sunfish/vendor/lib64/android.hardware.authsecret@1.0-impl.nos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.authsecret@1.0-impl.nos.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.biometrics.fingerprint@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.fingerprint@2.2.so:google \
     vendor/google_devices/sunfish/vendor/lib64/android.hardware.confirmationui.secure_input_citadel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.confirmationui.secure_input_citadel.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.gatekeeper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gatekeeper@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss@2.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss@2.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.gnss.measurement_corrections@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss.measurement_corrections@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.gnss.measurement_corrections@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss.measurement_corrections@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.gnss.visibility_control@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gnss.visibility_control@1.0.so:google \
     vendor/google_devices/sunfish/vendor/lib64/android.hardware.identity@1.0-impl.nos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.identity@1.0-impl.nos.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.input.classifier@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.input.classifier@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.input.common@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.input.common@1.0.so:google \
     vendor/google_devices/sunfish/vendor/lib64/android.hardware.keymaster@4.1-impl.nos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@4.1-impl.nos.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.neuralnetworks@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.neuralnetworks@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.neuralnetworks@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.neuralnetworks@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.neuralnetworks@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.neuralnetworks@1.2.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.neuralnetworks@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.neuralnetworks@1.3.so:google \
     vendor/google_devices/sunfish/vendor/lib64/android.hardware.oemlock@1.0-impl.nos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.oemlock@1.0-impl.nos.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.oemlock@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.oemlock@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.power@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.power@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.power@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.power@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.power@1.2.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.radio@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio@1.2.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.radio@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio@1.3.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.radio@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio@1.4.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.radio@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio@1.5.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.radio.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio.config@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.radio.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio.config@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.radio.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio.config@1.2.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.radio.deprecated@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio.deprecated@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.secure_element@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.secure_element@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.2.so:google \
     vendor/google_devices/sunfish/vendor/lib64/android.hardware.weaver@1.0-impl.nos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.weaver@1.0-impl.nos.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.hardware.weaver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.weaver@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.system.net.netd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.net.netd@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/android.system.net.netd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.net.netd@1.1.so:google \
     vendor/google_devices/sunfish/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so:google \
     vendor/google_devices/sunfish/vendor/lib64/camera/com.google.gabc.tuning.imx355.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.google.gabc.tuning.imx355.so:google \
     vendor/google_devices/sunfish/vendor/lib64/camera/com.google.gabc.tuning.imx363.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.google.gabc.tuning.imx363.so:google \
@@ -1107,8 +1205,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/lib64/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libQTapGLES.so:google \
     vendor/google_devices/sunfish/vendor/lib64/g3a.data.manager.vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/g3a.data.manager.vendor.so:google \
     vendor/google_devices/sunfish/vendor/lib64/google_wifi_firmware_config_info_cc_proto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/google_wifi_firmware_config_info_cc_proto.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/hardware.google.bluetooth.bt_channel_avoidance@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hardware.google.bluetooth.bt_channel_avoidance@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/hardware.google.bluetooth.sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hardware.google.bluetooth.sar@1.0.so:google \
     vendor/google_devices/sunfish/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:google \
     vendor/google_devices/sunfish/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:google \
     vendor/google_devices/sunfish/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:google \
@@ -1148,7 +1244,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libautohal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libautohal.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libavservices_minijail.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatterylistener.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so:google \
@@ -1391,7 +1486,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so:google \
-    vendor/google_devices/sunfish/vendor/lib64/lib_sensor_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_sensor_listener.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libsensorsuez.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorsuez.so:google \
     vendor/google_devices/sunfish/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so:google \
@@ -1568,25 +1662,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/lib64/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.power.pasrmanager@1.0.so:google \
     vendor/google_devices/sunfish/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so:google \
     vendor/google_devices/sunfish/vendor/lib/adsp_camera/libhalide_hexagon_remote_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/adsp_camera/libhalide_hexagon_remote_skel.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.authsecret@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.authsecret@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.gatekeeper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gatekeeper@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@2.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@2.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.gnss.measurement_corrections@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.measurement_corrections@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.gnss.measurement_corrections@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.measurement_corrections@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.gnss.visibility_control@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.visibility_control@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.graphics.composer@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.graphics.composer@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.2.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.graphics.composer@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.3.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.graphics.composer@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.4.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.keymaster@4.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@4.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.power@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.1.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.power@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.2.so:google \
-    vendor/google_devices/sunfish/vendor/lib/android.hardware.power-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power-V1-ndk_platform.so:google \
     vendor/google_devices/sunfish/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so:google \
     vendor/google_devices/sunfish/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so:google \
     vendor/google_devices/sunfish/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so:google \
@@ -1618,8 +1693,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so:google \
     vendor/google_devices/sunfish/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so:google \
     vendor/google_devices/sunfish/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so:google \
-    vendor/google_devices/sunfish/vendor/lib/hardware.google.bluetooth.bt_channel_avoidance@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/hardware.google.bluetooth.bt_channel_avoidance@1.0.so:google \
-    vendor/google_devices/sunfish/vendor/lib/hardware.google.bluetooth.sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/hardware.google.bluetooth.sar@1.0.so:google \
     vendor/google_devices/sunfish/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:google \
     vendor/google_devices/sunfish/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:google \
     vendor/google_devices/sunfish/vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl-qti.so:google \
@@ -1878,7 +1951,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so:google \
     vendor/google_devices/sunfish/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so:google \
     vendor/google_devices/sunfish/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so:google \
-    vendor/google_devices/sunfish/vendor/lib/lib_sensor_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_sensor_listener.so:google \
     vendor/google_devices/sunfish/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so:google \
     vendor/google_devices/sunfish/vendor/lib/libsensorsuez.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorsuez.so:google \
     vendor/google_devices/sunfish/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so:google \
