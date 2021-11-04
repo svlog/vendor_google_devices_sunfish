@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
     atfwd \
     com.qualcomm.qti.services.secureui \
     datastatusnotification \
+    EmergencyInfoGoogleNoUi \
     Flipendo \
     QtiTelephonyService \
     uceShimService \

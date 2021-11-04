@@ -594,6 +594,19 @@ LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := EmergencyInfoGoogleNoUi
+LOCAL_MODULE_TAGS := optional
+LOCAL_BUILT_MODULE_STEM := package.apk
+LOCAL_MODULE_OWNER := google
+LOCAL_MODULE_PATH := $(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM_EXT)/app
+LOCAL_SRC_FILES := system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := Flipendo
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk

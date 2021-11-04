@@ -240,6 +240,7 @@ d8489cbdceca42b4af2d12e99431772639e85e84  vendor/google_devices/sunfish/sunfish-
 67530680d4651bee888f2f1a1d50e58da9a49bd8  vendor/google_devices/sunfish/system_ext/app/atfwd/atfwd.apk
 a7a214ae313efe7c4aa8c6d4d0c93763c5829f92  vendor/google_devices/sunfish/system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
 019493631b89bb2b4ec54be79f6b6ef9a38a7db1  vendor/google_devices/sunfish/system_ext/app/datastatusnotification/datastatusnotification.apk
+d0aae102344aa971450c385dd4de33f05c7eca0c  vendor/google_devices/sunfish/system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk
 525a93dd34f3cf8444c9c98d63423ca93f5b6c7e  vendor/google_devices/sunfish/system_ext/app/Flipendo/Flipendo.apk
 3d28c737c17104a8f5fbc2535033655101607a83  vendor/google_devices/sunfish/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 0752f1f07cd855ce123693f7657602efaa848140  vendor/google_devices/sunfish/system_ext/app/uceShimService/uceShimService.apk
