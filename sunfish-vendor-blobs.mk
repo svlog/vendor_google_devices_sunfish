@@ -186,7 +186,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/product/media/bootanimation-dark.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip:google \
     vendor/google_devices/sunfish/product/media/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip:google \
     vendor/google_devices/sunfish/system_ext/bin/tcmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd:google \
-    vendor/google_devices/sunfish/system_ext/etc/init/init.sota.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.sota.rc:google \
     vendor/google_devices/sunfish/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc:google \
     vendor/google_devices/sunfish/system_ext/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perf/wlc_model.tflite:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml:google \
@@ -196,7 +195,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.android.settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.settings.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.android.systemui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.systemui.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.google.android.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.camera.extensions.xml:google \
-    vendor/google_devices/sunfish/system_ext/etc/permissions/com.google.android.factoryota.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.factoryota.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.google.euiccpixel.permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.permissions.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.google.euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.euiccpixel.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.qti.media.secureprocessor.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.media.secureprocessor.xml:google \
@@ -1839,6 +1837,8 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/lib/libmaxxaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmaxxaudio.so:google \
     vendor/google_devices/sunfish/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so:google \
     vendor/google_devices/sunfish/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so:google \
+    vendor/google_devices/sunfish/vendor/lib/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediautils_vendor.so:google \
+    vendor/google_devices/sunfish/vendor/lib/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemunreachable.so:google \
     vendor/google_devices/sunfish/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so:google \
     vendor/google_devices/sunfish/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so:google \
     vendor/google_devices/sunfish/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so:google \
