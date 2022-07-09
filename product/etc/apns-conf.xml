@@ -1258,6 +1258,7 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       bearer_bitmask="1|2|3|9|10|11|13|14|15|18|20"
       mtu="1300"
       user_visible="false"
@@ -1438,6 +1439,7 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       bearer_bitmask="1|2|3|9|10|11|13|14|15|18|20"
       mtu="1300"
       user_visible="false"
@@ -1497,6 +1499,7 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       bearer_bitmask="1|2|3|9|10|11|13|14|15|18|20"
       mtu="1300"
       user_visible="false"
@@ -1755,7 +1758,7 @@
       mnc="10"
       apn="sl2sfr"
       mmsc="http://mms1"
-      mmsproxy="010.143.156.003"
+      mmsproxy="10.143.156.3"
       mmsport="8080"
       type="default,mms,supl"
       mvno_type="gid"
@@ -2077,9 +2080,9 @@
       mnc="15"
       apn="ims"
       type="ims"
-      protocol="IPV4V6"
+      protocol="IPV6"
       bearer_bitmask="14|20"
-      mtu="1500"
+      mtu="1280"
       user_visible="false"
   />
 
@@ -2221,6 +2224,88 @@
       mmsproxy="10.12.0.1"
       mmsport="9028"
       type="mms"
+  />
+
+  <apn carrier="Orange Fr IMS"
+      mcc="208"
+      mnc="32"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15|18|20"
+      mtu="1300"
+  />
+
+  <apn carrier="Orange World"
+      mcc="208"
+      mnc="32"
+      apn=""
+      type="ia"
+      protocol="IPV6"
+  />
+
+  <apn carrier="Demo 5G"
+      mcc="208"
+      mnc="32"
+      apn="orange5g"
+      mmsc="http://mms.orange.fr"
+      user="orange"
+      password="orange"
+      authtype="1"
+      type="default,dun,supl,mms"
+      protocol="IPV6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15|20"
+  />
+
+  <apn carrier="vowifiorange"
+      mcc="208"
+      mnc="32"
+      apn="vowifiorange"
+      mmsc="http://mms.orange.fr"
+      type="mms"
+      protocol="IPV4V6"
+      bearer_bitmask="18"
+  />
+
+  <apn carrier="Orange Fr IMS"
+      mcc="208"
+      mnc="85"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15|18|20"
+      mtu="1300"
+  />
+
+  <apn carrier="Orange World"
+      mcc="208"
+      mnc="85"
+      apn=""
+      type="ia"
+      protocol="IPV6"
+  />
+
+  <apn carrier="Demo 5G"
+      mcc="208"
+      mnc="85"
+      apn="orange5g"
+      mmsc="http://mms.orange.fr"
+      user="orange"
+      password="orange"
+      authtype="1"
+      type="default,dun,supl,mms"
+      protocol="IPV6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15|20"
+  />
+
+  <apn carrier="vowifiorange"
+      mcc="208"
+      mnc="85"
+      apn="vowifiorange"
+      mmsc="http://mms.orange.fr"
+      type="mms"
+      protocol="IPV4V6"
+      bearer_bitmask="18"
   />
 
   <apn carrier="Bouygues Telecom"
@@ -2381,7 +2466,7 @@
       mnc="03"
       apn="CARREFOURMMS"
       mmsc="http://mms.orange.es"
-      mmsproxy="172.022.188.025"
+      mmsproxy="172.22.188.25"
       mmsport="8080"
       user="CARREFOUR"
       password="CARREFOUR"
@@ -5031,30 +5116,10 @@
       mvno_match_data="B3"
   />
 
-  <apn carrier="Talkmob PAYG WAP"
-      mcc="234"
-      mnc="15"
-      apn="payg.talkmobile.co.uk"
-      proxy="212.183.137.12"
-      port="8799"
-      mmsc="http://mms.talkmobile.co.uk/servlets/mms"
-      mmsproxy="212.183.137.12"
-      mmsport="8799"
-      user="wap"
-      password="wap"
-      authtype="1"
-      type="default,mms,supl"
-      mvno_type="gid"
-      mvno_match_data="C1"
-      user_editable="false"
-  />
-
   <apn carrier="Talkmob WAP"
       mcc="234"
       mnc="15"
       apn="talkmobile.co.uk"
-      proxy="212.183.137.12"
-      port="8799"
       mmsc="http://mms.talkmobile.co.uk/servlets/mms"
       mmsproxy="212.183.137.12"
       mmsport="8799"
@@ -5064,7 +5129,6 @@
       type="default,mms,supl"
       mvno_type="gid"
       mvno_match_data="C1"
-      user_editable="false"
   />
 
   <apn carrier="Lebara Internet"
@@ -5073,7 +5137,7 @@
       mnc="15"
       apn="uk.lebara.mobi"
       mmsc="http://mms.lebara.co.uk/servlets/mms"
-      mmsproxy="212.183.137.012"
+      mmsproxy="212.183.137.12"
       mmsport="8799"
       user="wap"
       password="wap"
@@ -6404,7 +6468,7 @@
       mvno_match_data="Lycamobile"
   />
 
-  <apn carrier="Telia SurfPort"
+  <apn carrier="Internet"
       mcc="238"
       mnc="20"
       apn="www.internet.mtelia.dk"
@@ -6416,7 +6480,7 @@
       mvno_match_data="2382010"
   />
 
-  <apn carrier="Telia MMS"
+  <apn carrier="MMS"
       mcc="238"
       mnc="20"
       apn="www.mms.mtelia.dk"
@@ -6444,7 +6508,7 @@
       user_visible="false"
   />
 
-  <apn carrier="Telia SurfPort"
+  <apn carrier="Internet"
       mcc="238"
       mnc="20"
       apn="www.internet.mtelia.dk"
@@ -6456,7 +6520,7 @@
       mvno_match_data="2382030"
   />
 
-  <apn carrier="Telia MMS"
+  <apn carrier="MMS"
       mcc="238"
       mnc="20"
       apn="www.mms.mtelia.dk"
@@ -6530,7 +6594,7 @@
       mvno_match_data="DLG TELE"
   />
 
-  <apn carrier="Telia SurfPort"
+  <apn carrier="Internet"
       carrier_id="656"
       mcc="238"
       mnc="30"
@@ -6541,7 +6605,7 @@
       roaming_protocol="IPV4V6"
   />
 
-  <apn carrier="Telia MMS"
+  <apn carrier="MMS"
       carrier_id="656"
       mcc="238"
       mnc="30"
@@ -6586,27 +6650,31 @@
       type="mms"
   />
 
-  <apn carrier="Internet"
+  <apn carrier="Halebop Internet"
       carrier_id="2287"
       mcc="240"
       mnc="01"
       apn="halebop.telia.se"
       authtype="0"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       mvno_type="spn"
       mvno_match_data="halebop"
   />
 
-  <apn carrier="MMS"
+  <apn carrier="Halebop MMS"
       carrier_id="2287"
       mcc="240"
       mnc="01"
       apn="mms.telia.se"
-      mmsc="http://mmss"
+      mmsc="http://mmsc"
       mmsproxy="193.209.134.132"
       mmsport="80"
       authtype="0"
       type="mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       mvno_type="spn"
       mvno_match_data="halebop"
   />
@@ -6630,20 +6698,24 @@
       mcc="240"
       mnc="01"
       apn="mms.telia.se"
-      mmsc="http://mmss"
+      mmsc="http://mmsc"
       mmsproxy="193.209.134.132"
       mmsport="80"
       authtype="0"
       type="mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
-  <apn carrier="Telia"
+  <apn carrier="Telia Internet"
       carrier_id="1690"
       mcc="240"
       mnc="01"
       apn="online.telia.se"
       authtype="0"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="ims"
@@ -6747,25 +6819,29 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="Internet"
+  <apn carrier="Halebop Internet"
       mcc="240"
       mnc="05"
       apn="halebop.telia.se"
       authtype="0"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       mvno_type="spn"
       mvno_match_data="HALEBOP"
   />
 
-  <apn carrier="MMS"
+  <apn carrier="Halebop MMS"
       mcc="240"
       mnc="05"
       apn="mms.telia.se"
-      mmsc="http://mmss"
+      mmsc="http://mmsc"
       mmsproxy="193.209.134.132"
       mmsport="80"
       authtype="0"
       type="mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       mvno_type="spn"
       mvno_match_data="HALEBOP"
   />
@@ -7290,6 +7366,7 @@
       mcc="242"
       mnc="02"
       apn="telia"
+      authtype="1"
       type="default,supl"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
@@ -7303,7 +7380,6 @@
       mmsc="http://mm/"
       mmsproxy="212.169.66.4"
       mmsport="8080"
-      authtype="1"
       type="mms"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
@@ -7714,26 +7790,30 @@
       type="mms"
   />
 
-  <apn carrier="SONERA Internet"
+  <apn carrier="Telia Internet"
       carrier_id="1480"
       mcc="244"
       mnc="91"
       apn="internet"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
-  <apn carrier="SONERA MMS"
+  <apn carrier="Telia MMS"
       carrier_id="1480"
       mcc="244"
       mnc="91"
       apn="wap.sonera.net"
-      mmsc="http://mms.sonera.fi:8002"
+      mmsc="http://mms"
       mmsproxy="195.156.25.33"
-      mmsport="80"
+      mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
-  <apn carrier="Omnitel MMS"
+  <apn carrier="Telia MMS"
       carrier_id="892"
       mcc="246"
       mnc="01"
@@ -7741,21 +7821,19 @@
       mmsc="http://mms.omnitel.net:8002/"
       mmsproxy="194.176.32.149"
       mmsport="8080"
-      user="mms"
-      password="mms"
-      authtype="1"
       type="mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
-  <apn carrier="Omnitel Internet"
+  <apn carrier="Telia Internet"
       carrier_id="892"
       mcc="246"
       mnc="01"
       apn="omnitel"
-      user="omni"
-      password="omni"
-      authtype="1"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="Bite Internet"
@@ -7894,6 +7972,8 @@
       mnc="01"
       apn="internet.emt.ee"
       type="default,supl"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="EMT MMS"
@@ -7905,6 +7985,8 @@
       mmsproxy="217.71.32.82"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="Elisa Internet"
@@ -9068,7 +9150,6 @@
       mnc="830"
       apn="internet"
       type="default"
-      protocol="IPV4V6"
       profile_id="0"
   />
 
@@ -9077,7 +9158,6 @@
       mnc="830"
       apn="ims"
       type="ims"
-      protocol="IPV4V6"
       profile_id="1"
   />
 
@@ -9846,7 +9926,7 @@
       mcc="294"
       mnc="02"
       apn="Internet"
-      proxy="http://wap.planet.mk"
+      proxy="wap.planet.mk"
       port="8080"
       user="Internet"
       password="Internet"
@@ -9936,7 +10016,7 @@
       mnc="01"
       apn="mms"
       mmsc="http://mm.vor.telenor.me"
-      mmsproxy="192.168.246.005"
+      mmsproxy="192.168.246.5"
       mmsport="8080"
       authtype="0"
       type="mms"
@@ -9947,7 +10027,7 @@
       mcc="297"
       mnc="01"
       apn="internet"
-      proxy="192.168.246.005"
+      proxy="192.168.246.5"
       port="8080"
       authtype="0"
       type="default,supl"
@@ -12506,7 +12586,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -13618,10 +13698,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="160"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -13721,7 +13817,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -13910,10 +14006,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="200"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -14013,7 +14125,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -14123,10 +14235,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="210"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -14226,7 +14354,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -14336,10 +14464,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="220"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -14439,7 +14583,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -14549,10 +14693,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="230"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -14652,7 +14812,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -14779,7 +14939,7 @@
       mnc="240"
       apn="sos"
       type="emergency"
-      protocol="IPV6"
+      protocol="IPV4V6"
       roaming_protocol="IPV6"
       mvno_type="gid"
       mvno_match_data="6230"
@@ -14819,10 +14979,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="240"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -14922,7 +15098,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -15032,10 +15208,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="250"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -15135,7 +15327,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -15384,7 +15576,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="4153"
       user_visible="false"
@@ -15508,7 +15700,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="4358"
       user_visible="false"
@@ -15592,7 +15784,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="4753"
       user_visible="false"
@@ -15676,7 +15868,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="4D4B"
       user_visible="false"
@@ -15800,7 +15992,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="6132"
       user_visible="false"
@@ -15884,7 +16076,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="6134"
       user_visible="false"
@@ -15968,7 +16160,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="6135"
       user_visible="false"
@@ -16046,7 +16238,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="6957"
       user_visible="false"
@@ -16130,7 +16322,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="6C79"
       user_visible="false"
@@ -16169,10 +16361,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="260"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -16287,7 +16495,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="7033"
       user_visible="false"
@@ -16371,7 +16579,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="7477"
       user_visible="false"
@@ -16449,7 +16657,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="7531"
       user_visible="false"
@@ -16527,7 +16735,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="756D"
       user_visible="false"
@@ -16605,7 +16813,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       mvno_type="gid"
       mvno_match_data="7A73"
       user_visible="false"
@@ -16787,7 +16995,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -16897,10 +17105,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="270"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -17000,7 +17224,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -17434,7 +17658,7 @@
       mnc="280"
       apn="ereseller"
       mmsc="http://mmsc.mobile.att.net"
-      mmsproxy="http://proxy.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
       mmsport="80"
       type="default,mms,supl"
       protocol="IPV4V6"
@@ -17476,7 +17700,7 @@
       mnc="280"
       apn="ereseller"
       mmsc="http://mmsc.mobile.att.net"
-      mmsproxy="http://proxy.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
       mmsport="80"
       type="default,mms,supl"
       protocol="IPV4V6"
@@ -17624,10 +17848,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="300"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -17727,7 +17967,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -17764,10 +18004,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="310"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -17867,7 +18123,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -18853,7 +19109,7 @@
       mnc="410"
       apn="ereseller"
       mmsc="http://mmsc.mobile.att.net"
-      mmsproxy="http://proxy.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
       mmsport="80"
       type="default,mms,supl"
       protocol="IPV4V6"
@@ -18895,7 +19151,7 @@
       mnc="410"
       apn="ereseller"
       mmsc="http://mmsc.mobile.att.net"
-      mmsproxy="http://proxy.mobile.att.net"
+      mmsproxy="proxy.mobile.att.net"
       mmsport="80"
       type="default,mms,supl"
       protocol="IPV4V6"
@@ -19351,10 +19607,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="490"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -19454,7 +19726,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -19491,10 +19763,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="530"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -19594,7 +19882,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -19742,10 +20030,25 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      mcc="310"
+      mnc="590"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -19843,7 +20146,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -19966,10 +20269,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="640"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -20069,7 +20388,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -20179,10 +20498,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="660"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -20282,7 +20617,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -20558,10 +20893,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="310"
+      mnc="800"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -20661,7 +21012,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -24937,6 +25288,101 @@
       user_visible="false"
   />
 
+  <apn carrier="Visible"
+      mcc="311"
+      mnc="480"
+      apn="internet"
+      mmsc="http://mms.vtext.com/servlets/mms"
+      authtype="3"
+      type="default,mms,supl,dun,fota,cbs"
+      protocol="IPV4V6"
+      bearer_bitmask="4|5|6|7|8|12"
+      mvno_type="gid"
+      mvno_match_data="BAE2000000000000"
+      user_visible="false"
+  />
+
+  <apn carrier="Visible"
+      mcc="311"
+      mnc="480"
+      apn="VZWINTERNET"
+      authtype="0"
+      type="default,supl,dun"
+      protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15|18|20"
+      profile_id="0"
+      modem_cognitive="true"
+      max_conns="20"
+      max_conns_time="300"
+      mvno_type="gid"
+      mvno_match_data="BAE2000000000000"
+  />
+
+  <apn carrier="Visible"
+      mcc="311"
+      mnc="480"
+      apn="VZWADMIN"
+      authtype="0"
+      type="fota"
+      protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15|18|20"
+      profile_id="3"
+      modem_cognitive="true"
+      max_conns="20"
+      max_conns_time="300"
+      mvno_type="gid"
+      mvno_match_data="BAE2000000000000"
+      user_visible="false"
+  />
+
+  <apn carrier="Visible"
+      mcc="311"
+      mnc="480"
+      apn="IMS"
+      authtype="0"
+      type="ia,ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="14|18|20"
+      profile_id="2"
+      modem_cognitive="true"
+      max_conns="20"
+      max_conns_time="300"
+      mvno_type="gid"
+      mvno_match_data="BAE2000000000000"
+      user_visible="false"
+  />
+
+  <apn carrier="Visible"
+      mcc="311"
+      mnc="480"
+      apn="VZWAPP"
+      mmsc="http://mms.vtext.com/servlets/mms"
+      authtype="0"
+      type="cbs,mms"
+      protocol="IPV4V6"
+      bearer_bitmask="1|2|3|9|10|11|13|14|15|18|20"
+      profile_id="4"
+      modem_cognitive="true"
+      max_conns="20"
+      max_conns_time="300"
+      mvno_type="gid"
+      mvno_match_data="BAE2000000000000"
+      user_visible="false"
+  />
+
+  <apn carrier="Visible Emergency"
+      mcc="311"
+      mnc="480"
+      apn="VZWEMERGENCY"
+      type="emergency"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      mvno_type="gid"
+      mvno_match_data="BAE2000000000000"
+      user_visible="false"
+  />
+
   <apn carrier="Verizon"
       carrier_id="1839"
       mcc="311"
@@ -25056,10 +25502,25 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      mcc="311"
+      mnc="490"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -25157,7 +25618,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -25166,7 +25627,7 @@
       mnc="500"
       apn="wap"
       mmsc="http://mmsc.ctc.csky.us:6672"
-      mmsproxy="09.4.229.46"
+      mmsproxy="9.4.229.46"
       mmsport="9201"
       type=""
       mvno_type="spn"
@@ -25178,7 +25639,7 @@
       mnc="500"
       apn="wap"
       mmsc="http://mmsc.ctc.csky.us:6672"
-      mmsproxy="09.4.229.46"
+      mmsproxy="9.4.229.46"
       mmsport="9201"
       type=""
       mvno_type="spn"
@@ -25190,7 +25651,7 @@
       mnc="500"
       apn="wap"
       mmsc="http://mmsc.ctc.csky.us:6672"
-      mmsproxy="09.4.229.46"
+      mmsproxy="9.4.229.46"
       mmsport="9201"
       type=""
       mvno_type="spn"
@@ -25202,7 +25663,7 @@
       mnc="500"
       apn="wap"
       mmsc="http://mmsc.ctc.csky.us:6672"
-      mmsproxy="09.4.229.46"
+      mmsproxy="9.4.229.46"
       mmsport="9201"
       type=""
       mvno_type="spn"
@@ -26341,10 +26802,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="311"
+      mnc="660"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -26444,7 +26921,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -26823,10 +27300,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="311"
+      mnc="882"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -26926,7 +27419,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -27426,10 +27919,26 @@
       mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
       type="default,mms,supl,hipri"
       protocol="IPV6"
+      bearer_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|17|20"
       mtu="1440"
       mvno_type="gid"
       mvno_match_data="6D38"
       user_editable="false"
+  />
+
+  <apn carrier="MetroPCS MMS"
+      carrier_id="1949"
+      mcc="312"
+      mnc="250"
+      apn="TMUS"
+      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
+      type="mms"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+      bearer_bitmask="18"
+      mvno_type="gid"
+      mvno_match_data="6D38"
+      user_visible="false"
   />
 
   <apn carrier="MetroPCS IMS"
@@ -27529,7 +28038,7 @@
       apn="sos"
       type="emergency"
       protocol="IPV6"
-      roaming_protocol="IPV6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 
@@ -28396,6 +28905,8 @@
       apn="lte.claropr.com"
       authtype="1"
       type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
 
   <apn carrier="IMS"
@@ -30306,17 +30817,6 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="02"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
   <apn carrier="Airtel MMS"
       carrier_id="1961"
       mcc="404"
@@ -30347,17 +30847,6 @@
       mcc="404"
       mnc="03"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="03"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -30558,17 +31047,6 @@
       mcc="404"
       mnc="10"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="10"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -30819,17 +31297,6 @@
       mcc="404"
       mnc="16"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="16"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -31455,17 +31922,6 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="31"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
   <apn carrier="Airtel MMS"
       carrier_id="1961"
       mcc="404"
@@ -31791,17 +32247,6 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="40"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
   <apn carrier="Airtel MMS"
       carrier_id="1961"
       mcc="404"
@@ -32097,17 +32542,6 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="45"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
   <apn carrier="Airtel MMS"
       carrier_id="1961"
       mcc="404"
@@ -32185,17 +32619,6 @@
       mcc="404"
       mnc="49"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="49"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -32775,17 +33198,6 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="70"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
   <apn carrier="Airtel MMS"
       carrier_id="1961"
       mcc="404"
@@ -33515,17 +33927,6 @@
       mcc="404"
       mnc="90"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="90"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -33616,17 +34017,6 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="92"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
   <apn carrier="Airtel MMS"
       carrier_id="1961"
       mcc="404"
@@ -33661,17 +34051,6 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="93"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
   <apn carrier="Airtel MMS"
       carrier_id="1961"
       mcc="404"
@@ -33702,17 +34081,6 @@
       mcc="404"
       mnc="94"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="94"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -33747,17 +34115,6 @@
       mcc="404"
       mnc="95"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="95"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -33792,17 +34149,6 @@
       mcc="404"
       mnc="96"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="96"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -33837,17 +34183,6 @@
       mcc="404"
       mnc="97"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="97"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -33882,17 +34217,6 @@
       mcc="404"
       mnc="98"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="404"
-      mnc="98"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -35335,17 +35659,6 @@
       mcc="405"
       mnc="51"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="405"
-      mnc="51"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -35380,17 +35693,6 @@
       mcc="405"
       mnc="52"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="405"
-      mnc="52"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -35425,17 +35727,6 @@
       mcc="405"
       mnc="53"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="405"
-      mnc="53"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -35470,17 +35761,6 @@
       mcc="405"
       mnc="54"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="405"
-      mnc="54"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -35515,17 +35795,6 @@
       mcc="405"
       mnc="55"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="405"
-      mnc="55"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -35560,17 +35829,6 @@
       mcc="405"
       mnc="56"
       apn="airtelgprs.com"
-      type="default,supl"
-      protocol="IPV4V6"
-  />
-
-  <apn carrier="AIRTEL LIVE"
-      carrier_id="1961"
-      mcc="405"
-      mnc="56"
-      apn="airtelfun.com"
-      proxy="100.1.200.99"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
@@ -42685,7 +42943,7 @@
       apn="ims"
       type="ims"
       protocol="IPV4V6"
-      bearer_bitmask="14|18|20"
+      bearer_bitmask="3|9|10|11|14|15|18|20"
       user_visible="false"
   />
 
@@ -43984,8 +44242,10 @@
       carrier_id="1706"
       mcc="525"
       mnc="03"
-      apn="miworld"
+      apn="ims"
       type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
       user_visible="false"
   />
 

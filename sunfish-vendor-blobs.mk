@@ -141,13 +141,13 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/product/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.descriptor:google \
     vendor/google_devices/sunfish/product/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.sound_model:google \
     vendor/google_devices/sunfish/product/etc/permissions/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml:google \
+    vendor/google_devices/sunfish/product/etc/permissions/com.android.imsserviceentitlement.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.imsserviceentitlement.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.omadm.service.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.android.sdm.plugins.connmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.connmo.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.android.sdm.plugins.dcmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.dcmo.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.android.sdm.plugins.diagmon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.diagmon.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.android.sdm.plugins.sprintdm.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.sprintdm.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.android.sdm.plugins.usccdm.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.usccdm.xml:google \
-    vendor/google_devices/sunfish/product/etc/permissions/com.customermobile.preload.vzw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.customermobile.preload.vzw.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.google.android.dialer.support.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.dialer.support.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.google.android.hardwareinfo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.hardwareinfo.xml:google \
     vendor/google_devices/sunfish/product/etc/permissions/com.google.android.odad.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.odad.xml:google \
@@ -177,6 +177,8 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/product/etc/sysconfig/pixel_experience_2019_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019_midyear.xml:google \
     vendor/google_devices/sunfish/product/etc/sysconfig/pixel_experience_2019.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019.xml:google \
     vendor/google_devices/sunfish/product/etc/sysconfig/pixel_experience_2020_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2020_midyear.xml:google \
+    vendor/google_devices/sunfish/product/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml:google \
+    vendor/google_devices/sunfish/product/etc/sysconfig/preinstalled-packages-platform-overlays.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-overlays.xml:google \
     vendor/google_devices/sunfish/product/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml:google \
     vendor/google_devices/sunfish/product/lib/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmengine.so:google \
     vendor/google_devices/sunfish/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so:google \
@@ -198,7 +200,6 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/com.qualcomm.qti.izattools.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.izattools.xml:google \
-    vendor/google_devices/sunfish/system_ext/etc/permissions/com.verizon.llkagent.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.verizon.llkagent.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/google-ril.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/google-ril.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/izat.xt.srv.xml:google \
     vendor/google_devices/sunfish/system_ext/etc/permissions/obdm_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/obdm_permissions.xml:google \
@@ -720,9 +721,11 @@ PRODUCT_COPY_FILES += \
     vendor/google_devices/sunfish/vendor/etc/crus_sp_cal_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/crus_sp_cal_mixer_paths.xml:google \
     vendor/google_devices/sunfish/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml:google \
     vendor/google_devices/sunfish/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml:google \
+    vendor/google_devices/sunfish/vendor/etc/default-permissions/default-permissions_talkback.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/default-permissions_talkback.xml:google \
     vendor/google_devices/sunfish/vendor/etc/default_snd.mps:$(TARGET_COPY_OUT_VENDOR)/etc/default_snd.mps:google \
     vendor/google_devices/sunfish/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml:google \
     vendor/google_devices/sunfish/vendor/etc/displayconfig/display_id_4630946475097398401.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946475097398401.xml:google \
+    vendor/google_devices/sunfish/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf:google \
     vendor/google_devices/sunfish/vendor/etc/FOSSConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/FOSSConfig.xml:google \
     vendor/google_devices/sunfish/vendor/etc/fstab.persist:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.persist:google \
     vendor/google_devices/sunfish/vendor/etc/fstab.sm7150:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.sm7150:google \
